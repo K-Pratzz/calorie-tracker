@@ -32,7 +32,7 @@ print(f'Average : {avg}')
 save=input("type y if you wanna save it in the txt file : ")
 if save=='y':
     with open("tracker.txt","w") as file:
-        file.write("mealName                 calories \n")
+        file.write("mealName              calories \n")
         for meal,calorie in zip(mealList,calorieList):
             file.write(f"{meal:<23}{calorie}\n")
 print("good")
